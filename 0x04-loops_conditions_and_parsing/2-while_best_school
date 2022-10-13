@@ -5,6 +5,6 @@ index=0
 
 while ((index < 10));
 do
-    echo "Holberton School"
+    echo "Best School"
     ((index++))
 done
