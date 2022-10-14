@@ -5,5 +5,5 @@ index=10
 until [ $index -lt 1 ];
 do
     echo "Best School"
-    let index-=1
+    index-=1
 done
