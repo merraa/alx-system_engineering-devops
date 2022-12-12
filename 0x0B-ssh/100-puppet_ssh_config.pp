@@ -1,16 +1,13 @@
-# Configure the SSH server to authenticates only through SSH keys
-include stdlib
+# Setup a SSH client configuration file to connect to a server with RSA key.
 
 file_line { 'Turn off passwd auth':
-  ensure => 'present',
-  path   => '/etc/ssh/ssh_config',
-  line   => 'PasswordAuthentication no',
-  match  => '^PasswordAuthentication'
+  path    => '/etc/ssh/ssh_config',
+  line    => '    PasswordAuthentication no',
+  replace => true
 }
 
 file_line { 'Declare identity file':
-  ensure => 'present',
-  path   => '/etc/ssh/ssh_config',
-  line   => 'IdentityFile ~/.ssh/holberton',
-  match  => '^IdentityFile'
+  path    => '/etc/ssh/ssh_config',
+  line    => '    IdentityFile ~/.ssh/holberton',
+  replace => true
 }
