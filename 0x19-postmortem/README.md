@@ -1,7 +1,7 @@
 # Postmortem
 ![Everytime you make a typo a kitten dies.(meme)](http://s2.quickmeme.com/img/35/3502d765ce5788d4a0c6f88ff8ec0d9d65e0473c089e7e9cd429e0bf8e0d1ebf.jpg)
 ## Issue Summary:
-On 1/22/18 at 5:23 pm PST, 100% of the website's service was down for a total 12 minutes, with service reinstated at 5:35 pm PST. Users universally experienced a response with a status code of 500 (internal server error). The root cause of the outage was a single-letter, typographical error in which a `.php` file was typed as a `.phpp` file.
+On 1/22/23 at 5:23 pm PST, 100% of the website's service was down for a total 12 minutes, with service reinstated at 5:35 pm PST. Users universally experienced a response with a status code of 500 (internal server error). The root cause of the outage was a single-letter, typographical error in which a `.php` file was typed as a `.phpp` file.
 
 ## Timeline for 1/22/18 (PST):
 **5:23 pm:** After deploying a WordPress update, a junior engineer noticed that the website was returning a 500 status code.
